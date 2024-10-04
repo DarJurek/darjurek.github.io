@@ -1,0 +1,620 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #dce2b8;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: #0b5013;
+}
+
+.header-background {
+  background-image: url("https://png.pngtree.com/background/20230522/original/pngtree-lemons-on-a-tree-in-a-field-picture-image_2694317.jpg");
+  /*("https://www.yarden.com/wp-content/uploads/2018/08/Eureka-Lemon-Tree-08.jpg");*/
+  width: 100vw;
+  height: 60%;
+  overflow: hidden; /*to prevent sticking out */
+  background-size: cover; /* Ensures the image covers the div */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+}
+nav {
+  background-color: rgba(220, 226, 184, 0.6);
+  height: 25%;
+  max-width: 100%;
+  margin: 0px;
+  padding: 10px;
+}
+#logo {
+  width: 90px;
+  height: auto;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.icons {
+  /*   DO NAPRAWY   */
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  text-align: right;
+}
+.icons-separate {
+  width: 32px;
+  height: 32px;
+  text-align: right;
+  font-size: 50px; /* Initial size of the icon */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+  display: inline-block; /* Ensure the icon behaves as a block element */
+}
+
+.meny {
+  font-size: 25px;
+  font-weight: 550;
+  word-spacing: 15px;
+  background-color: rgba(198, 213, 83, 0.6);
+  align-items: center;
+}
+.meny-text {
+  color: #0b5013;
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+  align-items: center;
+  margin-right: 20px;
+}
+.meny-text:hover {
+  transform: scale(1.15);
+  box-shadow: #d8d92e;
+}
+
+#image-icon {
+  width: 32px;
+  height: 32px;
+  text-align: right;
+  font-size: 50px; /* Initial size of the icon */
+  transition: transform 0.15s ease-in-out; /* Smooth transition */
+  display: inline-block; /* Ensure the icon behaves as a block element */
+}
+#image-icon:hover {
+  transform: scale(1.2); /* Increase the size 20% */
+}
+.welcome {
+  height: 400px;
+  max-width: 100%;
+  text-align: center;
+  color: #dce2b8;
+  font-size: xx-large;
+  background-size: cover; /* Ensures the image covers the div */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+}
+.text-welcome {
+  opacity: 1;
+}
+
+/*------typewriter effect--------*/
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+/* Animation -----*/
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 12em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/*------typewriter effect--------*/
+
+header {
+  /* background-color: #d8d92e; */
+  height: 40px;
+  width: 100%;
+  margin: 0px;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+#latest {
+  background-color: rgba(93, 156, 77, 0.2);
+  color: #344609;
+  height: 40px;
+  max-width: 100%;
+  text-align: left;
+  display: block;
+  padding: 10px 10%;
+  margin: 5px 0px;
+}
+
+.main-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid #5d9c4d;
+  border-bottom-right-radius: 95px;
+  border-top-left-radius: 95px;
+  margin-top: 2%;
+  margin-left: 7%;
+  margin-right: 7%;
+  height: auto; /*texten anpassas efter längden per automatik*/
+  width: 60%;
+  text-align: left;
+  padding: 20px;
+  /*align-items: flex-start; */
+}
+.posts-lemon {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0.5;
+  margin: 0;
+  max-width: 100vw; /*  to stay inside of the viewport*/
+  align-self: stretch;
+}
+.container-orange {
+  margin-bottom: 100px;
+  display: inline;
+  margin-bottom: 0px;
+}
+.container-pink {
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+}
+.post-title {
+  margin-bottom: 7px;
+  color: #000000;
+}
+.post-title:hover {
+  color: #0b5013;
+}
+
+#under-title {
+  margin-right: 90px;
+}
+
+.container-green {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 1;
+}
+.post-content {
+  /* position: relative; 
+  bottom: 70px; */
+  color: #000000;
+}
+
+#post-picture {
+  max-height: 350px;
+  max-width: 270px;
+  /**/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /**/
+
+  text-align: center;
+}
+
+#button-fullpost {
+  /* background-color: #dce2b8;
+  padding: 15px;
+  margin: 3px;
+  font-size: 14px;
+  border-radius: 10%;
+  border: #ddc072 solid 1px;
+  color: #678221;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-shadow: #ddc072 3px 3px; */
+  display: block;
+
+  width: 170px;
+  font-size: 14px;
+  font-weight: 550;
+  background-image: linear-gradient(
+    to left,
+    #678221,
+    #678221,
+    #d8e685,
+    #2bb673
+  );
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  /*  moz-transition: all 0.4s ease-in-out;                           */
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+#button-fullpost:hover {
+  background-image: linear-gradient(
+    to left,
+    #678221,
+    #678221,
+    #d8e685,
+    #2bb673
+  );
+  box-shadow: 0 4px 15px 0 #2bb673;
+}
+
+.post-line {
+  width: 55%;
+  text-align: left;
+  background-color: #256119;
+}
+.line-between-posts {
+  width: 100%;
+}
+#read-more {
+  border: 1px #d8d92e solid;
+  font-size: 18px;
+  width: 220px;
+  font-size: 16px;
+  font-weight: 550;
+  background-image: linear-gradient(
+    to left,
+    #344609,
+    #678221,
+    #d8e685,
+    #256119
+  );
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  /*  moz-transition: all 0.4s ease-in-out;                           */
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+#read-more:hover {
+  background-image: linear-gradient(
+    to left,
+    #344609,
+    #678221,
+    #d8e685,
+    #256119
+  );
+  box-shadow: 0 4px 15px 0 rgb(85, 117, 59);
+}
+
+/*SEARCH Box*/
+.search-box {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.input-search {
+  height: 30px;
+  width: 30px;
+  border-style: none;
+  padding-right: 15px;
+  padding-top: 15px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+  background-color: #678221;
+  padding-right: 40px;
+  color: #0b5013;
+}
+.input-search::placeholder {
+  color: rgb(198, 213, 83);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search {
+  border-style: none;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 20%;
+  top: 20%;
+  color: #fff;
+  background-color: transparent;
+  pointer-events: painted;
+}
+.btn-search:focus ~ .input-search {
+  width: 150px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+.input-search:focus {
+  width: 150px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+/*   NAD FOTEREM   */
+.down-there {
+  padding-top: 50px;
+  margin: 0px;
+  max-width: 100%;
+  text-align: center;
+  color: #dce2b8;
+  background-image: url("https://png.pngtree.com/background/20230522/original/pngtree-lemons-on-a-tree-in-a-field-picture-image_2694317.jpg");
+  background-size: cover; /* Ensures the image covers the div */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+
+.icons-down {
+  height: 60px;
+}
+
+/*       FOOTER         */
+.col-block {
+  background-color: #dce2b8;
+  padding: 0px;
+  margin: 0px;
+}
+
+.column {
+  width: 22%;
+  display: inline-block;
+  line-height: 25px;
+  vertical-align: top;
+  text-align: left;
+  color: #0b5013;
+}
+
+.column a:hover {
+  color: #678221;
+  font-style: bold;
+  font-size: 17px;
+}
+
+footer {
+  background-color: #678221;
+  height: 25%; /*---------------------------------------*/
+  position: static;
+  text-align: center;
+  padding: 0.3%;
+  margin: 0px;
+}
+
+/*dzialalo!
+back-top {
+  position: fixed;
+  right: 40px;
+  bottom: 70px;
+  height: 40px;
+  width: 40px;
+  color: #0b5013;
+}*/
+/*------------------*/
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+#back-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  height: 40px;
+  width: 40px;
+  color: #0b5013;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+#back-top:hover {
+  background-color: rgba(220, 226, 184, 0.6); /* Light gray on hover */
+}
+/*--------------------*/
+.post-top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+#post-picture-open {
+  padding: 0px 10px 10px 0px;
+  /*max-height: 350px;
+  max-width: 270px; */
+  border-top-right-radius: 10%;
+  width: 100%;
+  max-width: 270px;
+  height: auto;
+}
+#post-inside {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+#post-pic-inside {
+  padding: 0px 0px 0px 10px;
+  max-height: 350px;
+  max-width: 270px;
+  border-top-left-radius: 15%;
+}
+
+#author-note {
+  border: 1px solid #5d9c4d;
+  border-bottom-right-radius: 95px;
+  border-top-left-radius: 95px;
+  margin-top: 2%;
+  margin-left: 7%;
+  margin-right: 7%;
+  height: 750px;
+  width: 60%;
+  text-align: left;
+  padding: 20px;
+}
+
+/*     responsivitet: 
+        wszystkie posty razem i archiwum musza byc w osobnych   divach i ustawione jako row na poczatku i column przy tym
+        brytpunkcie */
+
+/* Extra small devices (phones, 550px and down) */
+@media only screen and (max-width: 800px) {
+  .main-home {
+    width: 85%;
+  }
+  .archive {
+    margin: 12%;
+    background-color: rgba(93, 156, 77, 0.2);
+    width: 200px;
+    max-width: 35%;
+    max-height: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /*flex-start to laduje na dole, a bez tez lol*/
+    border-bottom-left-radius: 45px;
+    border-top-right-radius: 45px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+}
+.menu-bars:hover {
+  font-size: larger;
+}
+@media only screen and (max-width: 600px) {
+  .col-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 20% 0;
+  }
+  .column {
+    flex: 1 1 40%; /* Varje kolumn tar 25% av behållaren */
+    box-sizing: border-box;
+  }
+  #h3-col-block {
+    margin-bottom: 7px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 800px) {
+  .menu-bars {
+    display: none;
+  }
+  .archive {
+    margin: 10px;
+    background-color: rgba(93, 156, 77, 0.2);
+    width: 170px;
+    max-width: 35%;
+    max-height: auto;
+    padding: 10px;
+    position: absolute;
+    right: 15px;
+    top: 700px;
+    border-bottom-left-radius: 45px;
+    border-top-right-radius: 45px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) ----------------ZMIANA BR-POINT-----------*/
+@media only screen and (max-width: 700px) {
+  .container-pink {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+  }
+  #button-fullpost {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .meny a:not(:last-child) {
+    display: none;
+  }
+  .meny-text {
+    align-items: center;
+    display: block;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: 550;
+  }
+  .text-welcome {
+    font-size: xx-large;
+    text-align: center;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+  }
+
+  #post-picture-open {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*.archive {
+    margin: 12%;
+    background-color: #c1d6bc;
+    width: 200px;
+    max-width: 35%;
+    max-height: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /*flex-start to laduje na dole, a bez tez lol
+    border-bottom-left-radius: 45px;
+    border-top-right-radius: 45px;
+    border: 2px solid #5d9c4d;
+  } */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+}
