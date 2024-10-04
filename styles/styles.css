@@ -545,8 +545,8 @@ html {
   .archive {
     margin: 10px;
     background-color: rgba(93, 156, 77, 0.2);
-    width: 170px;
-    max-width: 35%;
+    width: 200px;
+    max-width: 40%;
     max-height: auto;
     padding: 10px;
     position: absolute;
