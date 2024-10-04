@@ -96,7 +96,7 @@ nav {
 /*------typewriter effect--------*/
 .line-1 {
   position: relative;
-  top: 50%;
+  top: 75%;
   width: 24em;
   margin: 0 auto;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
@@ -519,7 +519,6 @@ html {
 @media only screen and (max-width: 600px) {
 }
 .menu-bars:hover {
-  font-size: larger;
 }
 @media only screen and (max-width: 600px) {
   .col-block {
@@ -539,9 +538,6 @@ html {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 800px) {
-  .menu-bars {
-    display: none;
-  }
   .archive {
     margin: 10px;
     background-color: rgba(93, 156, 77, 0.2);
@@ -583,9 +579,9 @@ html {
     font-weight: 550;
   }
   .text-welcome {
-    font-size: xx-large;
+    font-size: x-large;
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
     display: inline-block;
     text-align: center;
   }
@@ -612,7 +608,10 @@ html {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 700px) {
+  .menu-bars {
+    display: none;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
