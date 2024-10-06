@@ -45,15 +45,23 @@
         </div>
         <!------------------------------>
       </nav>
-      <header class="meny sidebar" id="mySidebar">
-        <!--<div class="menu-bars">☰</div>--->
-        <a class="meny-text" href="#">Home</a>
+      <header class="meny">
+        <a class="meny-text" href="https://darjurek.github.io/">Home</a>
         <a class="meny-text" href="#">About</a>
         <a class="meny-text" href="#">Contact</a>
-        <div id="main">
-          <button class="openbtn" id="menuBtn" onclick="toggleNav()">☰</button>
-        </div>
       </header>
+
+      <div id="mySidebar" class="sidebar">
+        <br />
+        <br />
+        <a href="https://darjurek.github.io/">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div id="main">
+        <button class="openbtn" id="menuBtn" onclick="toggleNav()">☰</button>
+      </div>
 
       <header class="welcome">
         <p class="text-welcome line-1 anim-typewriter">
@@ -306,7 +314,7 @@
 
       function toggleNav() {
         if (isOpen) {
-          document.getElementById("mySidebar").style.height = "40px"; // Collapse menu
+          document.getElementById("mySidebar").style.height = "50px"; // Collapse menu
           document.getElementById("menuBtn").innerHTML = "☰"; // Change icon to hamburger
         } else {
           document.getElementById("mySidebar").style.height = "200px"; // Expand menu
