@@ -3,45 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lemonified - Post 1</title>
-    <link rel="shortcut icon" type="image/jpg" href="images/favicon-lemon.png"/>
+    <title>SEO-Friendly Blog Post Title - Lemonified</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="images/favicon-lemon.png"
+    />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--  3 streck till responsiva menyn-->
   </head>
   <body>
-    <nav>
-      <div>
-        <img style="width: 100px; height: 50" src="images/logga.png" />
+    <div class="header-background">
+      <!---diven för att fixa bakgrunden-->
+      <nav>
+        <div>
+          <a href="https://darjurek.github.io/"
+            ><img id="logo" src="images/trans_bg.png"
+          /></a>
+        </div>
+        <!------------------------------>
+        <div class="icons">
+          <a class="icons-separate" href="https://www.facebook.com/"
+            ><img id="image-icon" src="images/icons8-facebook.svg"
+          /></a>
+          <a class="icons-separate" href="https://www.instagram.com/"
+            ><img id="image-icon" src="images/icons8-instagram.svg"
+          /></a>
+          <a class="icons-separate" href="https://www.linkedin.com"
+            ><img id="image-icon" src="images/icons8-linkedin.svg"
+          /></a>
+          <a
+            class="icons-separate"
+            href="https://open.spotify.com/track/2epbL7s3RFV81K5UhTgZje"
+            ><img id="image-icon" src="images/icons8-spotify.svg"
+          /></a>
+        </div>
+        <!------------------------------>
+      </nav>
+      <header class="meny">
+        <a class="meny-text" href="https://darjurek.github.io/">Home</a>
+        <a class="meny-text" href="#">About</a>
+        <a class="meny-text" href="#">Contact</a>
+      </header>
+
+      <div id="mySidebar" class="sidebar">
+        <br />
+        <br />
+        <a href="https://darjurek.github.io/">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
       </div>
-      <!------------------------------>
-      <div class="icons">
-        <a class="icons-separete" href="https://www.facebook.com/"><img id="image-icon" src="images/icons8-facebook.svg"
-        /></a>
-        <a class="icons-separete" href="https://www.instagram.com/"
-          ><img id="image-icon" src="images/icons8-instagram.svg"
-        /></a>
-        <a class="icons-separete" href="https://www.linkedin.com"
-          ><img id="image-icon" src="images/icons8-linkedin.svg"
-        /></a>
-        <a class="icons-separete" href="https://www.x.com"
-          ><img id="image-icon" src="images/icons8-spotify.svg"
-        /></a>
+
+      <div id="main">
+        <button class="openbtn" id="menuBtn" onclick="toggleNav()">☰</button>
       </div>
-      <!------------------------------>
-    </nav>
-    <header class="meny">
-      <a class="meny-text" href="#">Home</a>
-      <a class="meny-text" href="#">About</a>
-      <a class="meny-text" href="#">Contact</a>
-      <a class="meny-text" class="icons-separete" href="#"><img id="image-icon" src="images/icons8-search.svg"/></a>
-    </header>
-    <!-------------     zmienic na zdj z posta ---------------------------->
-    <header class="welcome"><p style="background-color: #c6d553; color: rgba(246, 242, 242, 0.6); width: 650px;">A perfect lemon every day!</p></header>
-    
-    <!---------------------------------------->
-    <main>
+
+      <header class="welcome">
+        <p class="text-welcome line-1 anim-typewriter">
+          A perfect lemon every day!
+        </p>
+      </header>
+      <!---------------------------------------->
+    </div>
+    <!----header-backgrund ends-->
+    <h2 id="latest">Latest lemon-posts:</h2>
+
+    <main class="main-home">
       <div class="post-separate">
       <div style="display: inline">
-        <h2 style="margin-bottom: 7px;">Post 1</h2>
+        <h2 style="margin-bottom: 7px;">SEO-Friendly Blog Post Title</h2>
         <span style="margin-right: 130px;">by: Name</span>
         <span>posted: date</span>
         <hr />
@@ -78,106 +113,161 @@
       
       </div>
       </div>
-      </main>
-<!---------------------na dole, om författaren----------------------------->
-<div id="author-note">
-  <p>by: Name</p><p>posted: <date></date> </p>
-<hr>
-<p>Posted under: </p>
-<p>Tags: </p>
-<p>Link to the post: </p> <!-----dodac ikone + funkcje kopiuj do schowka-->
-
+        <hr class="line-between-posts" />
+      </div>
+      <!----lemon ends-->
+      <div id="author-note">
+  <span id="under-title">by: Name</span>
+          <span
+            >posted: date
+            <hr
+          /></span>
+<p>Link to the post:</p><p id="text-to-copy">https://darjurek.github.io/post_example.html <button id="copy-button"><img class="copy-button" src="images/icons8-copy-32.png"></button></p>
+        
 <table>
   <tr>
-    <th style="border: 1px solid #0b5013;">About the author<img src="images/anonym.png"></th>
+    <th style="border: 1px solid #0b5013; display: block; padding: 0px 0px 25px 20px; margin-bottom: 0;">About the author<img style="height: 50px; padding-left: 60%; padding-top: 10px; display: block;" src="images/anonym.png"></th>
   </tr>
   <tr>
-    <td style="border: 1px solid #0b5013; padding: 12px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione dolor tenetur maxime vitae aut. Laborum assumenda hic quod sunt numquam dignissimos, vel nihil maxime repellendus fuga iste amet voluptatum recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nihil asperiores laborum cum! Voluptates corrupti cupiditate qui eaque tempora doloribus totam harum? Blanditiis dolor sit maiores consequuntur, eligendi quae pariatur?</td>
+    <td style="border: 1px solid #0b5013; padding: 12px; margin-top: 0;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione dolor tenetur maxime vitae aut. Laborum assumenda hic quod sunt numquam dignissimos, vel nihil maxime repellendus fuga iste amet voluptatum recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nihil asperiores laborum cum! Voluptates corrupti cupiditate qui eaque tempora doloribus totam harum? Blanditiis dolor sit maiores consequuntur, eligendi quae pariatur?</td>
   </tr>
 </table> </br>
 
 <span> Previous post:</span> <span>Next post:</span> </br>
 <a href="#"><< Welcome!</a> <a href="#">Post 2 >> </a>
 </div> <!---author-note ends-->
-
-
-
-
-<!-------------------------------------------------->
-
-      <div class="archive">
-        <h4>Post archive</h4>
-        <a href="#">September 2024</a><br />
-        <a href="#">Oktober 2024</a><br />
-        <a href="#">November 2024</a><br />
-        <h4>Tags</h4>
-        (searchbar)
+    </main>
+    <div class="archive">
+      <h4>Post archive</h4>
+      <a href="#">September 2024</a><br />
+      <a href="#">Oktober 2024</a><br />
+      <a href="#">November 2024</a><br />
+      <h4>Tags</h4>
+      <div style="max-width: 17ch; word-spacing: 5px">
+        <span>blog </span
+        ><span style="font-size: large; color: rgb(20, 97, 35)">lemon </span
+        ><span style="font-size: 15px">yellow </span><span>private </span
+        ><span style="font-size: large; color: rgb(20, 97, 35)">every day </span
+        ><span style="font-size: small; color: rgb(152, 188, 69)">citrus </span
+        ><span>shop </span
+        ><span style="font-size: large; color: rgb(20, 97, 35)">lime </span>
       </div>
-    
-
+      <br />
+      <h4>Search</h4>
+      <!-----SEARCH Box-->
+      <div class="search-box">
+        <button class="btn-search">
+          <img
+            width="25px"
+            height="25px"
+            src="images/search-light.svg"
+            alt="search--v1"
+          />
+        </button>
+        <input type="text" class="input-search" />
+        <br />
+        <br />
+      </div>
+    </div>
     <!--   nad footerem     -->
 
     <div class="down-there">
-      <hr class="callto-action">
-      <h1>Get lemonified!</h1> <i class="fa-thin fa-lemon" style="color: #c6d553;"></i>
+      <h1>Get lemonified!</h1>
       <p>Sign up today for your free trail</p>
       <h4>Join the lemon-army here as well:</h4>
       <!-------------------------->
       <div class="icons-down">
-        <a class="icons-separate" href="https://www.facebook.com/"><img id="image-icon" src="images/icons8-facebook.svg"
+        <a class="icons-separate" href="https://www.facebook.com/"
+          ><img id="image-icon" src="images/icons8-facebook-light.svg"
         /></a>
         <a class="icons-separate" href="https://www.instagram.com/"
-          ><img id="image-icon" src="images/icons8-instagram.svg"
+          ><img id="image-icon" src="images/icons8-instagram-light.svg"
         /></a>
         <a class="icons-separate" href="https://www.linkedin.com"
-          ><img id="image-icon" src="images/icons8-linkedin.svg"
+          ><img id="image-icon" src="images/icons8-linkedin-light.svg"
         /></a>
-        <a class="icons-separate" href="https://www.x.com"
-          ><img id="image-icon" src="images/icons8-spotify.svg"
+        <a
+          class="icons-separate"
+          href="https://open.spotify.com/track/2epbL7s3RFV81K5UhTgZje"
+          ><img id="image-icon" src="images/icons8-spotify-light.svg"
         /></a>
       </div>
       <!--------------------------->
-
     </div>
 
     <footer>
       <div class="col-block">
         <div class="column">
-          <h3>Kontakt</h3>
+          <h3 id="h3-col-block">Kontakt</h3>
           <a href="#">About us</a><br />
           <a href="#">Pricing</a><br />
           <a href="#">Sign up</a><br />
           <a href="#">Kakt-us</a><br />
         </div>
         <div class="column">
-          <h3>Tjänster</h3>
+          <h3 id="h3-col-block">Tjänster</h3>
           <a href="#">Your App</a><br />
           <a href="#">CMS</a><br />
           <a href="#">Video</a><br />
           <a href="#">Analytics</a><br />
         </div>
         <div class="column">
-          <h3>Genvägar</h3>
+          <h3 id="h3-col-block">Genvägar</h3>
           <a href="#">Support</a><br />
           <a href="#">Legal</a><br />
           <a href="#">Careers</a>
         </div>
         <div class="column">
-          <h3>Document</h3>
+          <h3 id="h3-col-block">Document</h3>
           <a href="#">Terms of service</a><br />
           <a href="#">Privacy Policy</a><br />
           <a href="#">Sitemap</a>
         </div>
-        <div class="column"></div>
-        <div class="column"></div>
-        <div class="column"></div>
-        
-        <a href="#"><img id="back-top" src="images/icons8-arrow-up.png"/></a>   <!--- back to the top icon-->
 
+        <!----po co to jest lol?-->
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
 
+        <a href="#"><img id="back-top" src="images/icons8-arrow-up.png" /></a>
+        <!--- back to the top icon-->
       </div>
-      
-      <p style="color: #dce2b8;">&#169; Lemonified 2024</p>
+
+      <p style="color: #dce2b8">&#169; Lemonified 2024</p>
     </footer>
+
+    <script>
+      let isOpen = false; // Variable to track sidebar state
+
+      function toggleNav() {
+        if (isOpen) {
+          document.getElementById("mySidebar").style.height = "0"; // Collapse menu
+          document.getElementById("menuBtn").innerHTML = "☰"; // Change icon to hamburger
+        } else {
+          document.getElementById("mySidebar").style.height = "200px"; // Expand menu
+          document.getElementById("menuBtn").innerHTML = "×"; // Change icon to 'X'
+        }
+        isOpen = !isOpen; // Toggle the state
+      }
+
+
+      /*copy to the clipboard function*/
+
+      document.getElementById('copy-button').addEventListener('click', function() {
+    // Select the text
+    const text = document.getElementById('text-to-copy').innerText;
+
+    // Use the Clipboard API to write the text
+    navigator.clipboard.writeText(text)
+        .then(() => {
+            console.log('Text copied to clipboard!');
+            alert('Text copied to clipboard!');
+        })
+        .catch(err => {
+            console.error('Could not copy text: ', err);
+        });
+});
+
+    </script>
   </body>
 </html>

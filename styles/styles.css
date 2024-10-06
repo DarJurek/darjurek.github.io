@@ -163,6 +163,7 @@ header {
   margin-top: 2%;
   margin-left: 7%;
   margin-right: 7%;
+  margin-bottom: 2%;
   height: auto; /*texten anpassas efter längden per automatik*/
   width: 60%;
   text-align: left;
@@ -262,6 +263,17 @@ header {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
+.copy-button {
+  height: 20px;
+  width: 20px;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
 #button-fullpost:hover {
   background-image: linear-gradient(
     to left,
@@ -316,6 +328,11 @@ header {
     #256119
   );
   box-shadow: 0 4px 15px 0 rgb(85, 117, 59);
+}
+.archive a:hover {
+  color: #678221;
+  font-style: bold;
+  font-size: 17px;
 }
 
 /*SEARCH Box*/
@@ -480,23 +497,17 @@ html {
 }
 
 #author-note {
-  border: 1px solid #5d9c4d;
   border-bottom-right-radius: 95px;
   border-top-left-radius: 95px;
   margin-top: 2%;
-  margin-left: 7%;
-  margin-right: 7%;
-  height: 750px;
-  width: 60%;
+  margin-left: auto;
+  margin-right: autom;
+  height: auto;
+  width: 90%;
   text-align: left;
   padding: 20px;
 }
 
-/*     responsivitet: 
-        wszystkie posty razem i archiwum musza byc w osobnych   divach i ustawione jako row na poczatku i column przy tym
-        brytpunkcie */
-
-/* Extra small devices (phones, 550px and down) */
 @media only screen and (max-width: 800px) {
   .main-home {
     width: 85%;
@@ -513,6 +524,9 @@ html {
     justify-content: flex-end; /*flex-start to laduje na dole, a bez tez lol*/
     border-bottom-left-radius: 45px;
     border-top-right-radius: 45px;
+  }
+  .meny {
+    display: none;
   }
 }
 
@@ -536,7 +550,6 @@ html {
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 800px) {
   .archive {
     margin: 10px;
@@ -550,6 +563,10 @@ html {
     top: 700px;
     border-bottom-left-radius: 45px;
     border-top-right-radius: 45px;
+  }
+  #main,
+  #mySidebar {
+    display: none;
   }
 }
 
@@ -568,16 +585,6 @@ html {
     margin-right: auto;
   }
 
-  .meny a:not(:last-child) {
-    display: none;
-  }
-  .meny-text {
-    align-items: center;
-    display: block;
-    padding: 15px;
-    font-size: 25px;
-    font-weight: 550;
-  }
   .text-welcome {
     font-size: x-large;
     text-align: center;
@@ -608,12 +615,62 @@ html {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 700px) {
-  .menu-bars {
-    display: none;
-  }
+
+/*-------------------*/
+
+/* Full-width hidden dropdown menu */
+.sidebar {
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  top: 120px; /* To leave space for the hamburger button */
+  left: 0;
+  background-color: rgba(198, 213, 83, 0.6);
+  overflow-y: hidden;
+  overflow-x: hidden;
+  transition: transform 0.7s ease;
+  z-index: 1;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1200px) {
+.sidebar a {
+  padding: 10px 20px;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+.sidebar a:hover {
+  transform: scale(1.15);
+  box-shadow: #d8d92e;
+}
+
+/* Hamburger button */
+.openbtn {
+  font-size: 20px;
+  font-weight: 1000;
+  cursor: pointer;
+  color: #0b5013;
+  background-color: #768b3e00;
+  padding: 10px 10px;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 120px;
+  z-index: 2;
+}
+
+/* Main content padding to avoid overlap */
+#main {
+  padding: 16px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+/* Media query for small screens */
+@media screen and (max-height: 450px) {
+  .sidebar a {
+    font-size: 18px;
+  }
 }
