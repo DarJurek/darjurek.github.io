@@ -15,7 +15,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-    <!--  3 streck till responsiva menyn-->
   </head>
   <body>
     <div class="header-background">
@@ -169,7 +168,6 @@
         <br />
       </div>
     </div>
-    <!--   nad footerem     -->
 
     <div class="down-there">
       <h1>Get lemonified!</h1>
@@ -224,7 +222,6 @@
           <a href="#">Sitemap</a>
         </div>
 
-        <!----po co to jest lol?-->
         <div class="column"></div>
         <div class="column"></div>
         <div class="column"></div>
@@ -237,27 +234,23 @@
     </footer>
 
     <script>
-      let isOpen = false; // Variable to track sidebar state
+      let isOpen = false; 
 
       function toggleNav() {
         if (isOpen) {
-          document.getElementById("mySidebar").style.height = "0"; // Collapse menu
-          document.getElementById("menuBtn").innerHTML = "☰"; // Change icon to hamburger
+          document.getElementById("mySidebar").style.height = "0"; 
+          document.getElementById("menuBtn").innerHTML = "☰"; 
         } else {
-          document.getElementById("mySidebar").style.height = "200px"; // Expand menu
-          document.getElementById("menuBtn").innerHTML = "×"; // Change icon to 'X'
-        }
-        isOpen = !isOpen; // Toggle the state
+          document.getElementById("mySidebar").style.height = "200px"; 
+          document.getElementById("menuBtn").innerHTML = "×";
+        isOpen = !isOpen; 
       }
 
 
-      /*copy to the clipboard function*/
 
       document.getElementById('copy-button').addEventListener('click', function() {
-    // Select the text
     const text = document.getElementById('text-to-copy').innerText;
 
-    // Use the Clipboard API to write the text
     navigator.clipboard.writeText(text)
         .then(() => {
             console.log('Text copied to clipboard!');
